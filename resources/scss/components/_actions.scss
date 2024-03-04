@@ -1,0 +1,120 @@
+.actions {
+    background-color: $light_bg;
+    padding-top: 6.25em;
+    padding-bottom: 5.313em;
+
+    @media (max-width: 1001px) {
+        padding-top: 4.375em;
+        padding-bottom: 3.75em;
+    }
+
+    @media (max-width: 767px) {
+
+    }
+
+    &__wrapper {
+        position: relative;
+
+        @media (max-width: 767px) {
+            max-width: 12.5em;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 3.125em;
+
+        @media (max-width: 1001px) {
+            margin-top: 2.5em;
+            grid-gap: 0.625em;
+        }
+
+        @media (max-width: 767px) {
+            display: initial;
+        }
+    }
+
+    &__item {
+        margin-bottom: 1.8em;
+
+        img {
+            border-radius: 1.25em;
+        }
+
+        figcaptions {
+            display: block;
+            padding-right: 0.3em;
+            padding-left: 0.3em;
+            margin-top: 1.25em;
+
+            @media (max-width: 767px) {
+                margin-top: 0.625em;
+            }
+        }
+
+        @media (max-width: 1001px) {
+            margin-right: 0;
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+
+    &__navigation {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        
+        @media (max-width: 767px) {
+            display: block;
+        }
+
+        > * {
+            position: absolute;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            @media (max-width: 1001px) {
+                > * {
+                    width: 0.875em;
+                }
+            }
+        }
+
+        .prev {
+            left: -1.25em;
+
+            @media (max-width: 1001px) {
+                left: -2.75em;
+            }
+        }
+
+        .next {
+            right: -1.25em;
+
+            @media (max-width: 1001px) {
+                right: -2.75em;
+            }
+        }
+    }
+
+    &__btn {
+        min-height: 4em;
+        width: 17em;
+        padding-right: 1.6em;
+        padding-left: 1.6em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1.6em;
+
+        @media (max-width: 1001px) {
+            min-height: 3.5em;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+html {
+    font-size: 0.86vw;
+    color: $dark;
+
+    @media (max-width: 1001px) {
+        font-size: 2.09vw;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 5vw;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
+    line-height: normal;
+}
+
+[data-js="image-popup"] {
+    cursor: pointer;
+}
+
+a {
+    outline: none !important;
+    text-decoration: none;
+}
+
+b {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 72.5em;
+    padding: 0 2.5em;
+    margin: 0 auto;
+    box-sizing: content-box;
+
+    @media (max-width: 1001px) {
+        padding-right: 1.875em;
+        padding-left: 1.875em;
+    }
+
+    @media (max-width: 767px) {
+        padding-right: 0.625em;
+        padding-left: 0.625em;
+    }
+}

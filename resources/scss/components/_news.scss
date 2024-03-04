@@ -1,0 +1,103 @@
+.news {
+    padding-top: 5.125em;
+    padding-bottom: 6.25em;
+    background-color: $light_bg;
+
+    &__grid {
+
+        @media (min-width: 767px) {
+            display: grid;
+            margin-top: 3.125em;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2.5em;
+        }
+    }
+
+    &__item {
+        display: flex;
+        padding: 1.438em 2.5em 3.75em;
+        border-radius: 1.25em;
+        border: 0.188em solid #C181FF;
+
+        @media (max-width: 767px) {
+            align-items: stretch;
+            padding: 1.25em 0.5em;
+            border: 0.188em solid #C181FF;
+        }
+
+        > * {
+            flex: 1 0 calc(50% - 2.5em);
+            margin-right: 1.25em;
+            margin-left: 1.25em;
+
+            @media (max-width: 767px) {
+                flex: 1 0 calc(50% - 0.75em);
+                margin-right: 0.375em;
+                margin-left: 0.375em;
+            }
+        }
+
+        .text {
+
+            @media (max-width: 767px) {
+                font-size: 0.75em;
+                margin-top: 0.833em;
+            }
+        }
+
+        .h3 {
+            @media (max-width: 767px) {
+                margin-right: -10px;
+            }
+        }
+    }
+
+    &__image {
+        margin-top: 3em;
+    }
+
+    &__popup {
+        display: block;
+        color: #232323;
+        font-family: Gilroy;
+        font-size: 0.9em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: underline;
+        margin-top: 0.5em;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__navigations {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: flex;
+            width: 8em;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: auto;
+
+            > * {
+                position: relative;
+                width: 6.25em;
+                height: 6.25em;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                background-image: url("/image/arrow.svg");
+                background-position: center;
+                background-size: auto;
+                background-repeat: no-repeat;
+
+                &.next {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

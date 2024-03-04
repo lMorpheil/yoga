@@ -1,0 +1,46 @@
+.schedule {
+    background-color: $light_bg;
+    padding-top: 5.313em;
+    padding-bottom: 5.313em;
+
+
+    &__wrapper {
+        @media (max-width: 1001px) {
+            overflow-y: scroll;
+        }
+    }
+
+    &__table {
+        margin-top: 3em;
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 100%;
+        border-collapse:collapse;
+        border: 1px solid var(--Linear, #C181FF);
+
+        b {
+            font-weight: 700;
+            font-size: 2em;
+        }
+    }
+
+    &__row {
+
+    }
+
+    &__ceil {
+        width: 100%;
+        min-width: 8em;
+        max-width: 8em;
+        min-height: 8.667em;
+        border: 1px solid var(--Linear, #C181FF);
+    }
+
+    &__btn {
+        margin-top: 3em;
+    }
+}

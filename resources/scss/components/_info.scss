@@ -1,0 +1,170 @@
+.info {
+    padding-top: 4.063em;
+    padding-bottom: 3.125em;
+    background-image: url("/image/info-bg.png");
+    background-repeat: no-repeat;
+    background-size: 73.75em 62.313em;
+    background-position: top -2.25em center;
+    background-color: $bg;
+
+    @media (max-width: 1001px) {
+        padding-top: 3.75em;
+        padding-bottom: 2.5em;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 2.5em;
+    }
+
+    &__count {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 42.813em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2.5em;
+        text-align: center;
+
+        @media (max-width: 1001px) {
+            max-width: 32.188em;
+            margin-top: 2.688em;
+        }
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+            max-width: 15.313em;
+            margin-top: 1.875em;
+
+            > * {
+                flex: 1 0 50%;
+                margin-bottom: 1.875em;
+            }
+        }
+
+        .digit {
+            text-align: center;
+            font-family: Gilroy;
+            font-size: 6.25em;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+
+            @media (max-width: 1001px) {
+                font-size: 5em;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 3.75em;
+            }
+        }
+
+        .description {
+            font-family: Gilroy;
+            font-size: 1.563em;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            margin-top: 0.8em;
+
+            @media (max-width: 1001px) {
+                font-size: 1.125em;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 1.125em;
+            }
+        }
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin-top: 5.313em;
+        margin-right: -1.25em;
+        margin-left: -1.25em;
+
+        @media (max-width: 1001px) {
+            margin-top: 3.75em;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 2.5em;
+        }
+
+        > * {
+            flex: 1 0 calc(50% - 3em);
+            margin-right: 1.25em;
+            margin-left: 1.25em;
+            margin-bottom: 2.5em;
+            border-radius: 1.25em;
+            border: 0.188em solid var(--Linear, #C181FF);
+            background: #F7F7F7;
+            backdrop-filter: blur(10px);
+
+            @media (max-width: 1001px) {
+                flex: 1 0 100%;
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            @media (max-width: 767px) {
+                margin-bottom: 1.25em;
+            }
+        }
+    }
+
+    &__grid-wrapper {
+        padding: 3.75em 3.75em 2.5em;
+
+        @media (max-width: 767px) {
+            padding: 1.25em;
+        }
+
+        .title {
+            font-family: Gilroy;
+            font-size: 1.875em;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 108%;
+
+            @media (max-width: 1001px) {
+                font-size: 1.25em;
+            }
+
+            b {
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            font-family: Gilroy;
+            font-size: 0.938em;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            margin-top: 1.333em;
+
+            @media (max-width: 1001px) {
+                font-size: 0.813em;
+            }
+
+            &.etc {
+                color: rgba(35, 35, 35, 0.90);
+                font-family: Gilroy;
+                font-size: 0.813em;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+
+                @media (max-width: 1001px) {
+                    font-size: 0.75em;
+                }
+            }
+        }
+    }
+}

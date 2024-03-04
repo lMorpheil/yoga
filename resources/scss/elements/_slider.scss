@@ -1,0 +1,23 @@
+.slick {
+
+    &-dots {
+        display: flex;
+
+        > * {
+            width: 0.75em;
+            height: 0.75em;
+            border-radius: 50%;
+            border: 1px solid $dark;
+            margin-right: 0.325em;
+            margin-left: 0.325em;
+
+            &.slick-active {
+                background-color: $dark;
+            }
+
+            > * {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.input {
+    display: inline-block;
+    height: 3.6em;
+    width: 14.3em;
+    color: $dark;
+    font-family: Gilroy;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 1em;
+    background-color: transparent;
+    padding: 0.25em 0.25em 0.25em 7em;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: 1001px) {
+        width: 14.05em;
+        height: 2.93em;
+        border-radius: 0.8em;
+        padding-left: 5.5em;
+    }
+
+    @media (max-width: 767px) {
+        width: 15em;
+        height: 2.4em;
+        border-radius: 0.938em;
+        padding-left: 3.25em;
+        font-size: 1em;
+    }
+
+    &_image {
+        background-size: 1em 1em;
+        background-position: left 5em center;
+        background-repeat: no-repeat;
+
+        @media (max-width: 1001px) {
+            background-position: left 4em center;
+        }
+
+        @media (max-width: 767px) {
+            background-position: left 1.4em center;
+        }
+    }
+
+    &_name {
+        background-image: url('/image/name.svg');
+    }
+
+    &_phone {
+        background-image: url('/image/phone.svg');
+    }
+}

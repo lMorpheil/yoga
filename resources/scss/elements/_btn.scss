@@ -1,0 +1,113 @@
+.btn {
+    display: block;
+    border: none;
+    min-height: 2.75em;
+    cursor: pointer;
+    border-radius: 3.125em;
+    background: var(--unnamed, linear-gradient(90deg, #AD57FF 3.13%, #D6ABFF 44.27%, #D6ABFF 63.02%, #AD57FF 100%));
+    color: $white;
+    text-align: center;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.15);
+    font-family: Gilroy;
+    font-size: 0.938em;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @media (max-width: 1001px) {
+        font-size: 1.125em;
+    }
+
+    &:hover {
+        background: var(--unnamed, linear-gradient(90deg, #AD57FF 0%, #D6ABFF 21.38%, #D6ABFF 73.90%, #AD57FF 100%));
+        text-shadow: 0 0 0.24em rgba(0, 0, 0, 0.20);
+    }
+
+    &:active {
+        background: var(--unnamed, linear-gradient(87deg, #AD57FF 14.02%, #C181FF 49.48%, #AD57FF 85.98%));
+        text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.15);
+    }
+
+    &_main {
+        min-height: 3.6em;
+        font-size: 1.563em;
+        padding-right: 1.28em;
+        padding-left: 1.28em;
+
+        @media (max-width: 10001px) {
+            min-height: 3.278em;
+            font-size: 1.125em;
+            padding-right: 1.55em;
+            padding-left: 1.55em;
+        }
+
+        @media (max-width: 767px) {
+            min-height: 3.688em;
+            font-size: 1em;
+            padding-right: 1.25em;
+            padding-left: 1.25em;
+            max-width: 16.875em;
+        }
+    }
+
+    &_black {
+        color: $dark;
+        text-transform: none;
+        border-radius: 1em;
+    }
+
+    &_rectangle {
+        color: $dark;
+        background: none;
+        border: 3px solid #AD57FF;
+
+        @media (max-width: 1001px) {
+            font-size: 0.938em;
+            font-weight: 500;
+            min-height: 3.333em;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 0.813em;
+            font-weight: 700;
+            padding-right: 0.769em;
+            padding-left: 0.769em;
+        }
+
+        &:hover {
+            background: none;
+            border: 3px solid #D3D3D3;
+        }
+
+        &.active,
+        &.action-price {
+            border: 3px solid $white;
+            color: $white;
+            background: var(--unnamed, radial-gradient(127.14% 127.14% at 50.00% 100.00%, #AD57FF 0%, #D6ABFF 100%));
+            background-size: cover;
+        }
+    }
+
+    &_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: none;
+        font-size: 1.25em;
+        padding-left: 1em;
+        padding-right: 1em;
+        min-width: 11.3em;
+
+        @media (max-width: 1001px) {
+            min-width: 10.667em;
+            font-size: 0.938em;
+            min-height: 3.333em;
+            height: 3.333em;
+        }
+
+        img {
+            margin-left: 0.5em;
+        }
+    }
+}

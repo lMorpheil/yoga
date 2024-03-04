@@ -1,0 +1,38 @@
+/****Шрифты****/
+@import "fonts/fonts";
+/*****Стили плагинов*****/
+@import "~slick-carousel/slick/slick.css";
+@import "~magnific-popup/dist/magnific-popup.css";
+/****Переменные****/
+@import "vars";
+/*****Основные стили*****/
+// Сброс
+@import "common/reset";
+//Общие стили
+@import "common/common";
+/****Элементы****/
+@import "elements/btn";
+@import "elements/h";
+@import "elements/menu";
+@import "elements/slider";
+@import "elements/input";
+@import "elements/form";
+@import "elements/modals";
+/****Блоки****/
+@import "components/header";
+@import "components/first-screen";
+@import "components/about";
+@import "components/main-slider";
+@import "components/directions";
+@import "components/news";
+@import "components/employees";
+@import "components/actions";
+@import "components/reviews";
+@import "components/price";
+@import "components/faq";
+@import "components/questions";
+@import "components/socials";
+@import "components/schedule";
+@import "components/footer";
+@import "components/alt-fs";
+@import "components/info";

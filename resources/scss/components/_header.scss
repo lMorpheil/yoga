@@ -1,0 +1,127 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 1001px) {
+        background-color: #232323;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+    }
+
+    &_dark {
+        position: initial;
+        background-color: $dark;
+    }
+
+    &__grid {
+        display: grid;
+        border-radius: 0.938em;
+        background-color: rgba(255, 255, 255, 0.03);
+        box-shadow: 0 0.25em 0.25em 0 rgba(255, 255, 255, 0.09) inset,
+        0 0.25em 2.688em 0 rgba(255, 255, 255, 0.06) inset;
+        backdrop-filter: blur(28px);
+        grid-template-columns: 2.5em 1fr 11.625em 11.25em;
+        align-items: center;
+        padding: 0.25em 0.625em 0.25em 1.563em;
+
+        @media (max-width: 1001px) {
+            grid-template-columns: 2.5em 1fr 1fr 11.25em;
+        }
+
+        @media (max-width: 767px) {
+            border-radius: 0.625em;
+        }
+    }
+
+    &__logo {
+
+    }
+
+    &__phone {
+        color: $white;
+        font-family: Gilroy;
+        font-size: 1.25em;
+        font-weight: 400;
+
+        span {
+            font-weight: 700;
+        }
+
+        @media (max-width: 1001px) {
+            display: none;
+        }
+    }
+
+    &__callback-btn {
+
+        @media (max-width: 1001px) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        margin-left: 2.813em;
+        margin-right: 2.563em;
+
+        @media (max-width: 1001px) {
+            display: none;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__burger {
+        display: none;
+        width: 2.692em;
+        height: 1.538em;
+        margin-left: auto;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        grid-column: 4/5;
+
+        @media (max-width: 1001px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item {
+            display: block;
+            background-color: #C181FF;
+            height: 3px;
+            width: 100%;
+        }
+
+        &.open {
+            position: relative;
+
+            .item {
+                display: none;
+
+                &:first-child {
+                    position: absolute;
+                    display: block;
+                    transform-origin: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+                &:last-child {
+                    position: absolute;
+                    display: block;
+                    transform-origin: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+

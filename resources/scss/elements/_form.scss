@@ -1,0 +1,63 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+
+        &:not(:first-child) {
+            margin-top: 1.5em;
+            margin-right: auto;
+            margin-left: auto;
+
+            @media (max-width: 1001px) {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .btn {
+        width: 15.5em;
+        font-size: 2.188em;
+        border-radius: 0.571em;
+        min-height: 3em;
+        margin-top: 0.857em;
+    }
+
+    &__label {
+        display: inline-block;
+        position: relative;
+        font-size: 1.25em;
+        text-align: center;
+
+        @media (max-width: 767px) {
+            font-size: 1em;
+        }
+
+        span {
+            display: inline-block;
+            width: 12.5em;
+            position: absolute;
+            text-align: left;
+            top: 50%;
+            left: 9em;
+            transform: translateY(-50%);
+            border-bottom: 1px solid $dark;
+
+            @media (max-width: 1001px) {
+                left: 7em;
+            }
+
+            @media (max-width: 767px) {
+                left: 3.5em;
+            }
+        }
+
+        &.focused {
+
+            span {
+                transition: all 0.3s ease;
+                top: 0.7em;
+            }
+        }
+    }
+}

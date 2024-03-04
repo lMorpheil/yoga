@@ -1,0 +1,77 @@
+.h1 {
+    color: $white;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 8.125em;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.144em;
+    text-transform: uppercase;
+
+    @media (max-width: 1001px) {
+        font-size: 5em;
+        letter-spacing: 0.2em;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 2.5em;
+    }
+
+    &_alt {
+        font-family: Montserrat;
+        font-size: 3.125em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.045em;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #AD57FF -17.78%, #D6ABFF 41.32%, #D6ABFF 68.25%, #AD57FF 121.36%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width: 1001px) {
+            font-size: 2.188em;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.25em;
+            text-align: center;
+
+            span {
+                display: block;
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+.h2 {
+    font-family: Montserrat;
+    font-size: 3.125em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    @media (max-width: 1001px) {
+        font-size: 2.188em;
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
+        font-size: 1.563em;
+    }
+}
+
+.h3 {
+    font-family: Gilroy;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: 700;
+
+    @media (max-width: 767px) {
+        font-size: 1.125em;
+    }
+}

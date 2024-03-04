@@ -1,0 +1,55 @@
+.first-screen {
+    background-image: url("/image/first-screen/fs-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 10.125em;
+    padding-bottom: 7.875em;
+    text-align: center;
+
+    @media (max-width: 1001px) {
+        background-image: url("/image/first-screen/fs-bg-tablet.jpg");
+        padding-top: 18.438em;
+        padding-bottom: 8.188em;
+    }
+
+    @media (max-width: 767px) {
+        background-image: url("/image/first-screen/fs-bg-mobile.jpg");
+        padding-top: 14.813em;
+        padding-bottom: 7.063em;
+    }
+
+    &__text {
+        color: $white;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        @media (max-width: 1001px) {
+            font-size: 1.563em;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.25em;
+            margin-bottom: 0.25em;
+        }
+    }
+
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2.84em;
+
+        @media (max-width: 1001px) {
+            margin-top: 5.833em;
+        }
+    }
+}
